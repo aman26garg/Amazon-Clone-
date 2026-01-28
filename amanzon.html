@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amazon o</title>
+  <link rel="stylesheet" href="amazon.css" />
+</head>
+<body>
+  <!-- TOP NAV -->
+  <header class="topbar">
+    <div class="brand">AMAZON<span class="lite"></span></div>
+
+    <div class="search">
+      <select class="cat">
+        <option>All</option>
+        <option>Mobiles</option>
+        <option>Electronics</option>
+        <option>Fashion</option>
+      </select>
+      <input type="text" placeholder="Search Amazon Clone" id="searchInput" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="links">
+      <div class="acc">Hello, Sign in</div>
+      <div class="orders">Returns<br><strong>& Orders</strong></div>
+      <div class="cart" id="cartBtn">🛒 <span id="cartCount">0</span></div>
+    </div>
+  </header>
+
+  <!-- SUBMENU -->
+  <nav class="submenu">
+    <div class="menu-left">☰ All</div>
+    <div class="menu-items">
+      <a>Today's Deals</a>
+      <a>Customer Service</a>
+      <a>Gift Cards</a>
+      <a>Sell</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Discover deals on top brands</h1>
+      <p>Shop now — limited time offers</p>
+      <button class="cta">Shop Deals</button>
+    </div>
+  </section>
+
+  <!-- MAIN GRID -->
+  <main class="container">
+    <!-- row: featured cards -->
+    <section class="card-row">
+      <article class="feature">
+        <h3>Top picks for you</h3>
+        <img src="https://images.unsplash.com/photo-1580910051073-0fbd91b7c0a9?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="">
+        <a class="link">See more</a>
+      </article>
+
+      <article class="feature">
+        <h3>Mobiles</h3>
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2" alt="">
+        <a class="link">Shop mobiles</a>
+      </article>
+
+      <article class="feature">
+        <h3>Headphones</h3>
+        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3" alt="">
+        <a class="link">Explore</a>
+      </article>
+
+      <article class="feature">
+        <h3>Watches</h3>
+        <img src="https://images.unsplash.com/photo-1518118573786-1476b28d9e7a?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=4" alt="">
+        <a class="link">See deals</a>
+      </article>
+    </section>
+
+    <!-- row: products -->
+    <section class="products" id="products">
+      <!-- JS will populate cards here (or keep static examples below) -->
+      <div class="product-card" data-id="1">
+        <img src="https://images.unsplash.com/photo-1602524811099-6a1ec2b1f0b6?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=5" alt="">
+        <h4>Wireless Headphones</h4>
+        <p class="price">₹1,499</p>
+        <button class="add">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="2">
+        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=6" alt="">
+        <h4>Smart Watch</h4>
+        <p class="price">₹3,999</p>
+        <button class="add">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="3">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7" alt="">
+        <h4>Realme Phone</h4>
+        <p class="price">₹9,999</p>
+        <button class="add">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="4">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=8" alt="">
+        <h4>Bluetooth Speaker</h4>
+        <p class="price">₹1,199</p>
+        <button class="add">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- SIMPLE CART MODAL -->
+  <div id="cartModal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Your Cart</h3>
+      <ul id="cartList"></ul>
+      <div class="modal-actions">
+        <button id="closeCart">Close</button>
+        <button id="clearCart">Clear Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>© 2025 Amazon Clone - Demo</div>
+      <div class="mini-links">
+        <a>Privacy</a> · <a>Terms</a> · <a>Help</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="amazon.js"></script>
+</body>
+</html>
